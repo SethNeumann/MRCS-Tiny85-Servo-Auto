@@ -2,3 +2,14 @@
 CAMOutputs/GerberFiles/gerber_job.gbrjob
 EagleTemplate-new.brd
 EagleTemplate-new.sch
+*.GBL
+*.GBO
+*.GBS
+*.GML
+*.GTL
+*.GTO
+*.GTP
+*.GTS
+*.TXT
+*.GBL
+*.GBO

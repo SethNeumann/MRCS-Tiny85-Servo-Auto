@@ -2218,11 +2218,11 @@ Source: www.vishay.com .. Bi-Color LED Vashay TLUV5300.pdf</description>
 <part name="GND5" library="SPCoast" deviceset="GND" device=""/>
 <part name="S2" library="SparkFun-Electromechanical" deviceset="TAC_SWITCH" device="PTH"/>
 <part name="GND6" library="SPCoast" deviceset="GND" device=""/>
-<part name="R6" library="SPCoast" deviceset="R*" device="PTH04" value="1K"/>
 <part name="R7" library="SPCoast" deviceset="R*" device="PTH04" value="2"/>
 <part name="R8" library="SPCoast" deviceset="R*" device="PTH04" value="2"/>
 <part name="LED2" library="led" deviceset="TLUV5300" device=""/>
 <part name="GND7" library="SPCoast" deviceset="GND" device=""/>
+<part name="R4" library="SPCoast" deviceset="R*" device="PTH04" value="1K"/>
 </parts>
 <sheets>
 <sheet>
@@ -2282,8 +2282,8 @@ GND</text>
 <attribute name="NAME" x="194.0814" y="156.21" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="198.882" y="153.67" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND2" gate="1" x="213.36" y="76.2" smashed="yes">
-<attribute name="VALUE" x="210.82" y="73.66" size="1.778" layer="96"/>
+<instance part="GND2" gate="1" x="213.36" y="86.36" smashed="yes">
+<attribute name="VALUE" x="210.82" y="83.82" size="1.778" layer="96"/>
 </instance>
 <instance part="P+4" gate="1" x="132.08" y="172.72" smashed="yes">
 <attribute name="VALUE" x="132.08" y="175.26" size="1.778" layer="96" rot="R90"/>
@@ -2294,8 +2294,8 @@ GND</text>
 <instance part="P+5" gate="1" x="220.98" y="152.4" smashed="yes">
 <attribute name="VALUE" x="218.44" y="147.32" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+6" gate="1" x="182.88" y="172.72" smashed="yes">
-<attribute name="VALUE" x="182.88" y="175.26" size="1.778" layer="96" rot="R90"/>
+<instance part="P+6" gate="1" x="195.58" y="172.72" smashed="yes">
+<attribute name="VALUE" x="195.58" y="175.26" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="SERVO" gate="G$1" x="167.64" y="157.48" smashed="yes" rot="R180">
 <attribute name="VALUE" x="121.92" y="179.07" size="1.778" layer="96" rot="R270"/>
@@ -2329,10 +2329,6 @@ GND</text>
 <instance part="GND6" gate="1" x="152.4" y="88.9" smashed="yes">
 <attribute name="VALUE" x="149.86" y="86.36" size="1.778" layer="96"/>
 </instance>
-<instance part="R6" gate="R" x="190.5" y="157.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="189.0014" y="156.21" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="193.802" y="153.67" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="R7" gate="R" x="142.24" y="152.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="140.97" y="155.9814" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="146.05" y="155.702" size="1.778" layer="96" rot="R180"/>
@@ -2342,8 +2338,12 @@ GND</text>
 <attribute name="VALUE" x="146.05" y="150.622" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="LED2" gate="G$1" x="198.12" y="109.22" rot="R90"/>
-<instance part="GND7" gate="1" x="198.12" y="99.06" smashed="yes">
-<attribute name="VALUE" x="198.12" y="93.98" size="1.778" layer="96"/>
+<instance part="GND7" gate="1" x="198.12" y="86.36" smashed="yes">
+<attribute name="VALUE" x="198.12" y="81.28" size="1.778" layer="96"/>
+</instance>
+<instance part="R4" gate="R" x="198.12" y="96.52" smashed="yes" rot="R90">
+<attribute name="NAME" x="196.6214" y="95.25" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="201.422" y="92.71" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -2367,12 +2367,8 @@ GND</text>
 </segment>
 <segment>
 <pinref part="P+6" gate="1" pin="+5V"/>
-<wire x1="182.88" y1="170.18" x2="182.88" y2="162.56" width="0.4064" layer="91"/>
-<pinref part="R6" gate="R" pin="2"/>
-<wire x1="182.88" y1="162.56" x2="190.5" y2="162.56" width="0.4064" layer="91"/>
+<wire x1="195.58" y1="170.18" x2="195.58" y2="162.56" width="0.4064" layer="91"/>
 <pinref part="R5" gate="R" pin="2"/>
-<wire x1="190.5" y1="162.56" x2="195.58" y2="162.56" width="0.4064" layer="91"/>
-<junction x="190.5" y="162.56"/>
 <junction x="195.58" y="162.56"/>
 </segment>
 <segment>
@@ -2412,7 +2408,7 @@ GND</text>
 </segment>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="213.36" y1="93.98" x2="213.36" y2="78.74" width="0.4064" layer="91"/>
+<wire x1="213.36" y1="93.98" x2="213.36" y2="88.9" width="0.4064" layer="91"/>
 <pinref part="S1" gate="S" pin="4"/>
 <pinref part="S1" gate="S" pin="3"/>
 <wire x1="215.9" y1="93.98" x2="213.36" y2="93.98" width="0.1524" layer="91"/>
@@ -2450,9 +2446,9 @@ GND</text>
 <junction x="161.29" y="160.02"/>
 </segment>
 <segment>
-<pinref part="LED2" gate="G$1" pin="CC"/>
+<pinref part="R4" gate="R" pin="1"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="198.12" y1="106.68" x2="198.12" y2="101.6" width="0.4064" layer="91"/>
+<wire x1="198.12" y1="91.44" x2="198.12" y2="88.9" width="0.3048" layer="91"/>
 </segment>
 </net>
 <net name="ADC3" class="0">
@@ -2530,8 +2526,12 @@ GND</text>
 <pinref part="J1" gate="G$1" pin="4"/>
 <wire x1="134.366" y1="134.62" x2="134.62" y2="134.62" width="0.3048" layer="91"/>
 <label x="149.86" y="135.89" size="1.778" layer="95"/>
-<wire x1="134.62" y1="134.62" x2="223.52" y2="134.62" width="0.3048" layer="91"/>
+<wire x1="134.62" y1="134.62" x2="190.5" y2="134.62" width="0.3048" layer="91"/>
 <junction x="134.62" y="134.62"/>
+<pinref part="LED2" gate="G$1" pin="AO"/>
+<wire x1="190.5" y1="134.62" x2="223.52" y2="134.62" width="0.3048" layer="91"/>
+<wire x1="190.5" y1="109.22" x2="190.5" y2="134.62" width="0.3048" layer="91"/>
+<junction x="190.5" y="134.62"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -2549,13 +2549,6 @@ GND</text>
 <junction x="134.62" y="121.92"/>
 </segment>
 </net>
-<net name="LED2PWR" class="0">
-<segment>
-<pinref part="R6" gate="R" pin="1"/>
-<pinref part="LED2" gate="G$1" pin="AO"/>
-<wire x1="190.5" y1="152.4" x2="190.5" y2="109.22" width="0.3048" layer="91"/>
-</segment>
-</net>
 <net name="N$4" class="0">
 <segment>
 <wire x1="134.62" y1="124.46" x2="134.366" y2="124.46" width="0.3048" layer="91"/>
@@ -2570,6 +2563,13 @@ GND</text>
 <pinref part="LED2" gate="G$1" pin="AG"/>
 <wire x1="205.74" y1="109.22" x2="205.74" y2="124.46" width="0.3048" layer="91"/>
 <junction x="205.74" y="124.46"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="CC"/>
+<pinref part="R4" gate="R" pin="2"/>
+<wire x1="198.12" y1="106.68" x2="198.12" y2="101.6" width="0.3048" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -1,0 +1,11 @@
+"Qty";"Value";"Device";"Package";"Parts";"Description";"AVAILABILITY";"DESCRIPTION";"MF";"MP";"PACKAGE";"PRICE";"PURCHASE-URL";
+"1";"";"CONNECTOR-M08LOCK";"1X08_LOCK";"J1";"Header 8";"";"";"";"";"";"";"";
+"2";"";"TAC_SWITCHPTH";"TACTILE-PTH";"S1, S2";"Momentary Switch";"";"";"";"";"";"";"";
+"1";"0.1 uF";"CAPPTH2";"C-PTH-0.100";"C2";"";"";"";"";"";"";"";"";
+"1";"0.1uF";"CAPPTH2";"C-PTH-0.100";"C1";"";"";"";"";"";"";"";"";
+"2";"1K";"RPTH04";"AXIAL-0.4-RES";"R4, R5";"Resistor";"";"";"";"";"";"";"";
+"4";"2";"RPTH04";"AXIAL-0.4-RES";"R1, R2, R7, R8";"Resistor";"";"";"";"";"";"";"";
+"1";"4.7K";"RPTH04";"AXIAL-0.4-RES";"R3";"Resistor";"";"";"";"";"";"";"";
+"1";"ATTINY85-20PU";"ATTINY85-20PU";"DIP762W46P254L927H533Q8B";"U1";"ATtiny Series 20 MHz 8 KB Flash 512 B SRAM 8-Bit Microcontroller - DIP-8 Check availability";"In Stock";" AVR AVR® ATtiny, Functional Safety (FuSa) Microcontroller IC 8-Bit 20MHz 8KB (4K x 16) FLASH 8-PDIP ";"Microchip Technology / Atmel";"ATTINY85-20PU";"None";"None";"https://pricing.snapeda.com/search/part/ATTINY85-20PU/?ref=eda";
+"1";"CONNECTOR-M03254-LOCK";"CONNECTOR-M03254-LOCK";"3POL254";"SERVO";"";"";"";"";"";"";"";"";
+"1";"TLUV5300";"TLUV5300";"TLUV5300";"LED2";"Bicolor LED 5 mm Untinted Diffused Package";"";"";"";"";"";"";"";
